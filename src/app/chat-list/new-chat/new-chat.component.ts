@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
-import {MatDialogActions, MatDialogContent, MatDialogTitle} from '@angular/material/dialog';
-import {MatFormField} from '@angular/material/form-field';
+import {MatDialogActions, MatDialogContent, MatDialogRef, MatDialogTitle} from '@angular/material/dialog';
+import {MatFormField, MatLabel} from '@angular/material/form-field';
 import {FormsModule} from '@angular/forms';
 import {MatInput} from '@angular/material/input';
 import {MatButton} from '@angular/material/button';
@@ -14,7 +14,8 @@ import {MatButton} from '@angular/material/button';
     FormsModule,
     MatDialogActions,
     MatInput,
-    MatButton
+    MatButton,
+    MatLabel
   ],
   templateUrl: './new-chat.component.html',
   styleUrl: './new-chat.component.css'
@@ -22,7 +23,7 @@ import {MatButton} from '@angular/material/button';
 export class NewChatComponent {
   chatName: string = '';
 
-  constructor(public dialogRef: MatDialogRef<NewChatDialogComponent>) {
+  constructor(public dialogRef: MatDialogRef<NewChatComponent>) {
   }
 
   onCancel(): void {

@@ -1,1 +1,8 @@
-<p>login works!</p>
+<h1>Login</h1>
+<form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+  <mat-form-field>
+    <mat-label>Username</mat-label>
+    <input matInput [(ngModel)]="username" name="username" required>
+  </mat-form-field>
+  <button mat-raised-button color="primary" type="submit" [disabled]="!loginForm.form.valid">Login</button>
+</form>

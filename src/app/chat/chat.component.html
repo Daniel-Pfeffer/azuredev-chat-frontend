@@ -1,1 +1,13 @@
-<p>chat works!</p>
+<div class="chat-container">
+  <div class="chat-window">
+    <div *ngFor="let msg of messages" [ngClass]="getMessageType(msg)">
+      <app-message [message]="msg"></app-message>
+    </div>
+  </div>
+  <div class="chat-input">
+    <mat-form-field class="message-input">
+      <input matInput [(ngModel)]="message" placeholder="Type a message...">
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="sendMessage()">Send</button>
+  </div>
+</div>

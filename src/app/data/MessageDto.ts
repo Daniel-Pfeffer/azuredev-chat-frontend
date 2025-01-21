@@ -1,6 +1,7 @@
-interface ChatDto{
+export interface MessageDto {
   externalId: string;
-  name: string;
-  creatorId: string;
-
+  senderId: string;
+  chatId: string;
+  text: string;
+  createdAt: Date;
 }

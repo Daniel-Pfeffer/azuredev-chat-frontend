@@ -1,0 +1,10 @@
+.message-card {
+  margin-bottom: 10px;
+  display: inline-block;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+mat-card-content {
+  white-space: pre-wrap;
+}

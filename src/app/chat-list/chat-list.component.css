@@ -1,0 +1,22 @@
+.chat-list-container {
+  width: 300px;
+  float: left;
+  border-right: 1px solid #ccc;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #f5f5f5;
+}
+
+.chat-list-item {
+  cursor: pointer;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.chat-list-item:hover {
+  background-color: #e0e0e0;
+}
+
+.chat-container {
+  height: 100vh;
+}
