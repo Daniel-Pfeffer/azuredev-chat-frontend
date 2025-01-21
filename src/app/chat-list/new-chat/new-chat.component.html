@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>Create New Chat</h1>
+<div mat-dialog-content>
+  <mat-form-field>
+    <mat-label>Chat Name</mat-label>
+    <input matInput [(ngModel)]="chatName">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-button (click)="onCreate()">Create</button>
+</div>
